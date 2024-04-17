@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #292929;
+    color: white;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+#pontos {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+section {
+    display: inline-block; /* Isso impede que a largura seja 100% */
+    text-align: left; /* Volte ao alinhamento à esquerda dentro da section */
+    justify-content: center;
+    background-color: black;
+}
+
+.row {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.jogo {
+    background-color: #292929;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    font-size: 4.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.alerta {
+    align-items: center;
+    background-color: #fcc8c8;
+    color: black;
+    border: 1px solid #FF4D4D;
+    border-radius: 5px;
+    padding: 15px 20px;
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: fadeInOut 2.8s ease-in-out forwards;
+    font-weight: 400;
+    color: black;
+}
+
+@keyframes fadeInOut {
+    10%, 50%, 75% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0;
+    }
+}

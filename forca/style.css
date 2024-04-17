@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #292929;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+}
+
+section {
+    color: white;
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+header h2 {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+article {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+#palavra {
+    font-size: 1.3em;
+    margin: 20px 0 20px 0;
+    text-transform: uppercase;
+}
+
+#letras {
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.input {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+#input {
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 2px white;
+    width: 90%;
+    outline: none;
+}
+
+#input:focus {
+    border-color: #4169E1;
+}
+
+#inserir {
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 2px white;
+    width: 10%;
+    padding: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#inserir:hover {
+    background-color: #4169E1;
+    border-color: #4169E1;
+    color: white;
+}
+
+.alerta {
+    align-items: center;
+    background-color: #fcc8c8;
+    color: black;
+    border: 1px solid #FF4D4D;
+    border-radius: 5px;
+    padding: 15px 20px;
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: fadeInOut 2.8s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+    10%, 50%, 75% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0;
+    }
+}
